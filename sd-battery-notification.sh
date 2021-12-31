@@ -1,4 +1,6 @@
 #!/bin/bash
+# This script was inspired by a script shared by Fabby on
+# https://forum.manjaro.org/t/battery-limiter-on-kde/27443/10
 
 battery="BAT0"
 
