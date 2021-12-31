@@ -1,0 +1,12 @@
+[Unit]
+Description=Notify when battery charge crosses a threshold
+
+[Service]
+RuntimeDirectory=battery-notification
+RuntimeDirectoryPreserve=yes
+WorkingDirectory=%t/battery-notification
+Type=oneshot
+ExecStart=bash -c "sd-battery-notification.sh"
+
+[Install]
+WantedBy=sd_battery_notification.timer
