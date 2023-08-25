@@ -6,7 +6,7 @@ RuntimeDirectory=battery-notification
 RuntimeDirectoryPreserve=yes
 WorkingDirectory=%t/battery-notification
 Type=oneshot
-ExecStart=bash -c "sd-battery-notification.sh"
+ExecStart=bash -c "sd_battery_notification.sh"
 
 [Install]
 WantedBy=sd_battery_notification.timer
